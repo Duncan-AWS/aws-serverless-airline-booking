@@ -11,7 +11,7 @@ backend:
         - "# Execute Amplify CLI with the helper script"
         - amplifyPush --simple
         ##
-        # Extract Environment data
+        # Extract Environment data ### My Comments here ###
         ##
         - export STACK_NAME=$(jq -r '.providers.awscloudformation.StackName' ./amplify/#current-cloud-backend/amplify-meta.json)
         - export DEPLOYMENT_BUCKET_NAME=$(jq -r '.providers.awscloudformation.DeploymentBucketName' ./amplify/#current-cloud-backend/amplify-meta.json)
