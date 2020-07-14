@@ -35,7 +35,7 @@
         </q-item>
         <q-item :to="{ name: 'profile' }" exact>
           <q-item-side icon="person" />
-          <q-item-main label="Profile" sublabel="User profile" />
+          <q-item-main label="Profile" sublabel="User Profile" />
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
           <q-item-side icon="drive_eta" />
@@ -51,10 +51,10 @@
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
           <q-item-side icon="help_outline" />
-          <q-item-main label="FAQ" sublabel="Frequently Asked Questions" />
+          <q-item-main label="Help - FAQ" sublabel="Frequently Asked Questions" />
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
-          <q-item-side icon="certificat_outline" />
+          <q-item-side icon="certificate_outline" />
           <q-item-main label="Legal and Privacy" sublabel="Terms and Conditions" />
         </q-item>
 
