@@ -18,7 +18,7 @@
           round
           dense
           size="lg"
-          icon="search"
+          icon="home"
           :to="{ name: 'home' }"
         />
       </q-toolbar>
