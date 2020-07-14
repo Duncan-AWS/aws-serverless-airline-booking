@@ -39,7 +39,7 @@
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
           <q-item-side icon="drive_eta" />
-          <q-item-main label="My Vehicles" sublabel="Bookings" />
+          <q-item-main label="My Vehicles" sublabel="Registration Number" />
         </q-item>
       </q-list>
     </q-layout-drawer>
