@@ -38,8 +38,8 @@
           <q-item-main label="Profile" sublabel="User profile" />
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
-          <q-item-side icon="flight" />
-          <q-item-main label="My Bookings" sublabel="Bookings" />
+          <q-item-side icon="drive_eta" />
+          <q-item-main label="My Vehicles" sublabel="Bookings" />
         </q-item>
       </q-list>
     </q-layout-drawer>
