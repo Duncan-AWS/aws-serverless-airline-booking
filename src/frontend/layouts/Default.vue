@@ -50,7 +50,7 @@
           <q-item-main label="History" sublabel="Payment and Fuel History" />
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
-          <q-item-side icon="fact_check" />
+          <q-item-side icon="mdi-certificate-outline" />
           <q-item-main label="Legal and Privacy" sublabel="Terms and Conditions" />
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
