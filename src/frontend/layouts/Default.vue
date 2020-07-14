@@ -41,6 +41,23 @@
           <q-item-side icon="drive_eta" />
           <q-item-main label="My Vehicles" sublabel="Registration Number" />
         </q-item>
+        <q-item :to="{ name: 'bookings' }" exact>
+          <q-item-side icon="payment" />
+          <q-item-main label="Payment Card" sublabel="Credit Card" />
+        </q-item>
+        <q-item :to="{ name: 'bookings' }" exact>
+          <q-item-side icon="local_gas_station" />
+          <q-item-main label="History" sublabel="Payment and Fuel History" />
+        </q-item>
+        <q-item :to="{ name: 'bookings' }" exact>
+          <q-item-side icon="help_outline" />
+          <q-item-main label="FAQ" sublabel="Frequently Asked Questions" />
+        </q-item>
+        <q-item :to="{ name: 'bookings' }" exact>
+          <q-item-side icon="certificat_outline" />
+          <q-item-main label="Legal and Privacy" sublabel="Terms and Conditions" />
+        </q-item>
+
       </q-list>
     </q-layout-drawer>
 
