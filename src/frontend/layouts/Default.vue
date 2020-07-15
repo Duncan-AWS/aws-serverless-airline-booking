@@ -37,7 +37,7 @@
           <q-item-side icon="person" />
           <q-item-main label="Profile" sublabel="User Profile" />
         </q-item>
-        <q-item :to="{ name: 'bookings' }" exact>
+        <q-item :to="{ name: 'vehicles' }" exact>
           <q-item-side icon="drive_eta" />
           <q-item-main label="My Vehicles" sublabel="Registration Number" />
         </q-item>
@@ -45,9 +45,9 @@
           <q-item-side icon="payment" />
           <q-item-main label="Payment Card" sublabel="Credit Card" />
         </q-item>
-        <q-item :to="{ name: 'vehicles' }" exact>
+        <q-item :to="{ name: 'bookings' }" exact>
           <q-item-side icon="local_gas_station" />
-          <q-item-main label="History" sublabel="Payment and Fuel History" />
+          <q-item-main label="Transactions" sublabel="Payment and Fuel History" />
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
           <q-item-side icon="help_outline" />
