@@ -51,6 +51,24 @@ const router = new Router({
           meta: { requiresAuth: true }
         },
         {
+          path: "/profile/vehicles",
+          name: "vehicles",
+          component: Vehicles,
+          meta: { requiresAuth: true }
+        },
+        {
+          path: "/profile/payment",
+          name: "payment",
+          component: Payment,
+          meta: { requiresAuth: true }
+        },
+        {
+          path: "/profile/transactions",
+          name: "transactions",
+          component: Transactions,
+          meta: { requiresAuth: true }
+        },
+        {
           path: "/auth",
           name: "auth",
           component: Authentication,
