@@ -6,6 +6,7 @@ import Profile from "./views/Profile.vue";
 import FlightResults from "./views/FlightResults.vue";
 import FlightSelection from "./views/FlightSelection.vue";
 import Bookings from "./views/Bookings.vue";
+import Vehicles from "./views/Vehicles.vue";
 import Authentication from "./views/Authentication.vue";
 import store from "./store";
 
@@ -50,13 +51,13 @@ const router = new Router({
           component: Bookings,
           meta: { requiresAuth: true }
         },
-      /* {
-        *  path: "/profile/vehicles",
-        *  name: "vehicles",
-        *  component: Vehicles,
-        *  meta: { requiresAuth: true }
-        * },
-        */
+        {
+          path: "/profile/vehicles",
+          name: "vehicles",
+          component: Vehicles,
+          meta: { requiresAuth: true }
+        },
+        
        
       /*  {
        *   path: "/profile/payment",
@@ -65,7 +66,7 @@ const router = new Router({
        *   meta: { requiresAuth: true }
        * },
        */
-      
+
       /*{
         *  path: "/profile/transactions",
         *  name: "transactions",
