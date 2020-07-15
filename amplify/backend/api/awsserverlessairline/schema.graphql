@@ -86,10 +86,17 @@ type Query {
     getLoyalty(customer: String): Loyalty
 }
 
-type Vehicles @model {
+type Vehicles 
+    @model(subscriptions: null) 
+    @auth(rules: [
+      {allow: owner, ownerField: "customer", identityField: "sub", operations: [read]},
+      {allow: groups, groups: ["Admin"]}
+    ])
+{
     id: ID!
     vrn: String!
     customer: String!
     make: String
     model: String
 }
+
