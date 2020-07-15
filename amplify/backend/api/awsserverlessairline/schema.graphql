@@ -102,6 +102,3 @@ type Vehicle
     photo: String
 }
 
-type Query {
-    getVehicle(customer: String): Vehicle
-}
