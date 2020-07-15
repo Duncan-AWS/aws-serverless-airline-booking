@@ -98,5 +98,7 @@ type Vehicles
     customer: String!
     make: String
     model: String
+    colour: String
+    photo: String
 }
 
