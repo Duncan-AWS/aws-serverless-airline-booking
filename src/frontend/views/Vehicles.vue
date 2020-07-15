@@ -57,7 +57,7 @@ export default {
    *
    * Search view displays options for searching a flight given a departure, arrival and a date.
    */
-  name: "Search",
+  name: "Vehicles",
   
   data() {
     return {
