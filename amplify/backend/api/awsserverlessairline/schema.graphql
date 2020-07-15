@@ -86,7 +86,7 @@ type Query {
     getLoyalty(customer: String): Loyalty
 }
 
-type Vehicles 
+type Vehicle
     @model(subscriptions: null) 
     @auth(rules: [
       {allow: owner, ownerField: "customer", identityField: "sub", operations: [read]},
@@ -102,3 +102,6 @@ type Vehicles
     photo: String
 }
 
+type Query {
+    getVehicle(customer: String): Vehicle
+}
