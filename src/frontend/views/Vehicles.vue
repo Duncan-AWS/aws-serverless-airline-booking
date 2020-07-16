@@ -62,7 +62,7 @@ export default {
       /**
        * @param {object} vrn - Vehicle Registration Number chosen by the customer
        */
-      vrn: "abc"
+      vrn: "eg. DW19 AWS"
     };
   },
   methods: {
