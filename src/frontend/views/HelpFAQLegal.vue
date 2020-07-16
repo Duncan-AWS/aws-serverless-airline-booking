@@ -15,20 +15,29 @@
         :label-width="8"
       >
       </q-field>
-     <p>How does Auto Pay work?</p>
-     <p>This is a paragraph of text explaining how the system works</p>
+  
     </div>
     
     <div class="search__options q-pa-sm">
-      <q-field
-        class="home-icons search__options--input search__arrival"
-        icon="not_listed_location"
-        icon-color="primary"
-        :label-width="8"
-      >
-      </q-field>
-     <p>Do I need to enter the shop?</p>
-     <p>This is a paragraph of text explaining how the system works</p>
+      
+      <q-card flat bordered class="my-card">
+        <q-card-section>
+          <div class="text-h6">How Does Auto Pay work?</div>
+        </q-card-section>
+
+        <q-card-section class="q-pt-none">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </q-card-section>
+
+        <q-separator inset />
+
+        <q-card-section>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </q-card-section>
+      </q-card>
+
     </div>
 
   </q-page>
