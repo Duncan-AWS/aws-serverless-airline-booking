@@ -7,6 +7,7 @@
         </div>
       </div>
     </div>
+    
     <div class="search__options q-pa-sm">
       <q-field
         class="home-icons search__options--input search__arrival"
@@ -15,11 +16,9 @@
         :label-width="8"
       >
       </q-field>
-  
     </div>
     
     <div class="search__options q-pa-sm">
-      
       <q-card flat bordered class="my-card">
         <q-card-section>
           <div class="text-h6">How Does Auto Pay work?</div>
@@ -31,14 +30,45 @@
         </q-card-section>
 
         <q-separator inset />
+    </div>
 
+    <div>
         <q-card-section>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          <q-field :value="text" bottom-slots label="How does Auto Pay by Octank work?" stack-label counter :dense="dense">
+        <template v-slot:prepend>
+          <q-icon name="not_listed_location" />
+        </template>
+
+        <template v-slot:control>
+          <div class="self-center full-width no-outline" tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</div>
+        </template>
+      </q-field>
         </q-card-section>
       </q-card>
-
     </div>
+    
+    <div>
+    <q-field :value="text" bottom-slots label="Do I have to go into the store?" stack-label counter :dense="dense">
+          <template v-slot:prepend>
+            <q-icon name="not_listed_location" />
+          </template>
+
+          <template v-slot:control>
+            <div class="self-center full-width no-outline" tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</div>
+          </template>
+
+          <template v-slot:append>
+            <q-icon name="close" class="cursor-pointer" />
+          </template>
+
+          <template v-slot:hint>
+            Field hint
+          </template>
+    </q-field>
+    </div>
+
 
   </q-page>
 </template>
