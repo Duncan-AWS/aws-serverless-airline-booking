@@ -7,6 +7,7 @@ import FlightResults from "./views/FlightResults.vue";
 import FlightSelection from "./views/FlightSelection.vue";
 import Bookings from "./views/Bookings.vue";
 import Vehicles from "./views/Vehicles.vue";
+import HelpFAQLegal from "./views/HelpFAQLegal.vue";
 import Authentication from "./views/Authentication.vue";
 import store from "./store";
 
