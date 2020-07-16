@@ -77,10 +77,10 @@ const router = new Router({
         */
 
         {
-          path: "/static/help",
+          path: "/help",
           name: "HelpFAQLegal",
           component: HelpFAQLegal,
-          meta: { requiresAuth: false }
+          meta: { requiresAuth: true }
         },
         
         {
