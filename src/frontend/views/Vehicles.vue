@@ -31,9 +31,7 @@
         class="cta__button"
         color="secondary"
         label="Submit"
-        :disable="
-          !$v.vrn
-        "
+
       >
         <q-icon
           class="cta__button--direction"
