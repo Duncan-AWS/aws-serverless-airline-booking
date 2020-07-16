@@ -74,6 +74,14 @@ const router = new Router({
         *  meta: { requiresAuth: true }
         *  },
         */
+
+        {
+          path: "/static/help",
+          name: "HelpFAQLegal",
+          component: HelpFAQLegal,
+          meta: { requiresAuth: false }
+        },
+        
         {
           path: "/auth",
           name: "auth",

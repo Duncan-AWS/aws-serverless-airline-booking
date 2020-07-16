@@ -49,7 +49,7 @@
           <q-item-side icon="local_gas_station" />
           <q-item-main label="Transactions" sublabel="Payment and Fuel History" />
         </q-item>
-        <q-item :to="{ name: 'bookings' }" exact>
+        <q-item :to="{ name: 'helpFAQLegal' }" exact>
           <q-item-side icon="help_outline" />
           <q-item-main label="Help - FAQ - Legal" sublabel="Frequently Asked Questions" />
         </q-item>
