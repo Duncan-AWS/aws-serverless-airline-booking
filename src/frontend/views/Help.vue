@@ -46,14 +46,12 @@
 <script>
 // @ts-nocheck
 
-
-
 export default {
   /**
    *
    * Help view displays options for searching a flight given a departure, arrival and a date.
    */
-  name: "HelpFAQLegal"
+  name: "help",
   
 };
 </script>
