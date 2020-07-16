@@ -77,7 +77,7 @@ const router = new Router({
         */
 
         {
-          path: "/help",
+          path: "/profile/help",
           name: "HelpFAQLegal",
           component: HelpFAQLegal,
           meta: { requiresAuth: true }
