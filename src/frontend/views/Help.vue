@@ -20,8 +20,6 @@
     
     <div class="search__options q-pa-sm">
       <q-card flat bordered class="my-card">
-        <q-icon name="not_listed_location" />
-        
         <q-card-section>
           <div class="text-h2">How Does Auto Pay work?</div>
         </q-card-section>
@@ -41,6 +39,15 @@
       </div>
     </div>
 
+    <div class="search__options q-pa-sm">
+      <q-field
+        class="home-icons search__options--input search__arrival"
+        icon="not_listed_location"
+        icon-color="primary"
+        :label-width="8"
+      >
+      </q-field>
+    </div>
 
   </q-page>
 </template>

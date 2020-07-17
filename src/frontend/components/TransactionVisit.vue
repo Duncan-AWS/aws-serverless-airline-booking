@@ -1,9 +1,9 @@
 <template>
   <div @click="toggle" class="booking_flights">
     <div class="booking_flight">
-      <flight-card :details="flight" booking />
+      <visit-card :details="flight" booking />
     </div>
-    <BookingCard
+    <TransactionCard
       ref="card"
       :reference="bookingID"
       :name="fullName"

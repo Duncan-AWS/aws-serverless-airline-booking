@@ -3,7 +3,7 @@
     <q-card
       class="flight__card"
       :id="details.flightNumber"
-      data-test="flight-card"
+      data-test="visit-card"
     >
       <div class="col-10">
         <q-list highlight>
