@@ -5,14 +5,12 @@
       :id="details.flightNumber"
       data-test="flight-card"
     >
-      <div class="col-5">
+      <div class="col-10">
         <q-list highlight>
           <q-list-header>
             <div class="row uppercase text-bold">
-              <div class="col">Departure</div>
-              <div class="col text-right" data-test="flight-long-date">
-                {{ details.departureDayMonthYear }}
-              </div>
+              <div class="col">Vehicle</div>
+              <div class="col">Fuel</div>
             </div>
             <div class="row text-primary flight__direction">
               <div class="col flight__left-details">
@@ -32,10 +30,9 @@
                   Grey, BMW
                 </div>
               </div>
-              <div class="col-2 flight__center-details text-center">
+              
+              <div class="col flight__left-details">
                 <q-icon class="flight__icon" name="local_gas_station" />
-              </div>
-              <div class="col flight__right-details text-right">
                 <div
                   class="q-headline flight__arrival uppercase"
                   data-test="flight-arrival-code"
