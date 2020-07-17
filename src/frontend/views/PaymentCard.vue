@@ -1,31 +1,17 @@
 <template>
   <q-page>
-    <flight-toolbar
-      v-if="this.selectedFlight"
-      :departure="this.selectedFlight.departureAirportCode"
-      :arrival="this.selectedFlight.arrivalAirportCode"
-    />
+    
     <div class="flights">
-      <div class="heading">
-        <div
-          class="q-headline text-primary text-center flight__headline"
-          data-test="flight-headline"
-        >
-          Review your selection
-        </div>
-        <div class="loader" v-if="loading">
-          <flight-loader></flight-loader>
-        </div>
-      </div>
       <flight-card v-if="this.selectedFlight" :details="this.selectedFlight" />
     </div>
+
     <div class="form__payment">
       <div class="text-center">
         <div
           class="form__header q-pt-md q-headline text-primary text-center"
           data-test="form-header"
         >
-          Payment details
+          Enter Payment Card details
         </div>
         <div class="form">
           <form>
@@ -94,7 +80,7 @@
             </div>
             <div class="outcome">
               <div
-                class="error text-bold text-secondary form__error"
+                class="error text-bold text-primary form__error"
                 data-test="form-error"
                 v-if="token.error"
               >
@@ -107,7 +93,7 @@
           @click="payment"
           class="cta__button text-weight-medium"
           color="secondary"
-          label="Agree and pay now"
+          label="Register Card now"
           :disable="$v.form.$invalid || form.isCardInvalid"
           data-test="payment-button"
         >
@@ -125,9 +111,9 @@
 <script>
 // @ts-nocheck
 import FlightCard from "../components/FlightCard";
-import FlightToolbar from "../components/FlightToolbar";
-import FlightClass from "../shared/models/FlightClass";
-import FlightLoader from "../components/FlightLoader";
+// import FlightToolbar from "../components/FlightToolbar";
+// import FlightClass from "../shared/models/FlightClass";
+// import FlightLoader from "../components/FlightLoader";
 import { validationMixin } from "vuelidate";
 import { required, minLength } from "vuelidate/lib/validators";
 import { mapState, mapGetters } from "vuex";
