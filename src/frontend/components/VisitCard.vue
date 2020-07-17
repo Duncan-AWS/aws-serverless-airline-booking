@@ -16,34 +16,39 @@
             </div>
             <div class="row text-primary flight__direction">
               <div class="col flight__left-details">
+                <q-icon class="flight__icon" name="drive_eta" />
                 <div
                   class="q-headline flight__departure uppercase"
                   data-test="flight-departure-code"
                 >
-                  {{ details.departureAirportCode }}
+                  <!-- {{ details.departureAirportCode }} -->
+                  OV62 ZNL
                 </div>
                 <div
                   class="q-caption capitalize text-secondary text-bold"
                   data-test="flight-departure-name"
                 >
-                  {{ details.departureAirportName }}
+                  <!-- {{ details.departureAirportName }} -->
+                  Grey, BMW
                 </div>
               </div>
               <div class="col-2 flight__center-details text-center">
-                <q-icon class="flight__icon" name="local_airport" />
+                <q-icon class="flight__icon" name="local_gas_station" />
               </div>
               <div class="col flight__right-details text-right">
                 <div
                   class="q-headline flight__arrival uppercase"
                   data-test="flight-arrival-code"
                 >
-                  {{ details.arrivalAirportCode }}
+                  <!-- {{ details.arrivalAirportCode }} -->
+                  &pound; 47.89
                 </div>
                 <div
                   class="q-caption capitalize text-secondary text-bold"
                   data-test="flight-arrival-name"
                 >
-                  {{ details.arrivalAirportName }}
+                  <!-- {{ details.arrivalAirportName }} -->
+                  21.06 Litres
                 </div>
               </div>
             </div>
