@@ -5,7 +5,7 @@
       :id="details.flightNumber"
       data-test="flight-card"
     >
-      <div class="col-10">
+      <div class="col-11">
         <q-list highlight>
           <q-list-header>
             <div class="row uppercase text-bold">
@@ -13,7 +13,7 @@
               <div class="col">Fuel</div>
             </div>
             <div class="row text-primary flight__direction">
-              <div class="col-8 flight__left-details">
+              <div class="col-6 flight__left-details">
                 <q-icon class="flight__icon" name="drive_eta" />
                 <div
                   class="q-headline flight__departure uppercase"
