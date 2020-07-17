@@ -9,7 +9,7 @@
         <q-list highlight>
           <q-list-header>
             <div class="row uppercase text-bold">
-              <div class="col">Vehicle</div>
+              <div class="col-7">Vehicle</div>
               <div class="col">Fuel</div>
             </div>
             <div class="row text-primary flight__direction">
@@ -182,7 +182,7 @@ export default {
   margin 1.3rem 1rem
 
 .flight__card
-  min-width 20rem
+  min-width 18rem
   max-width 32rem
   margin auto
   width 100%
@@ -192,7 +192,7 @@ export default {
   font-size $item-icon-size
 
 .flight__arrival
-  margin-left 1.3rem
+  margin-left 0.3rem
 
 .flight__separator
   background-color $secondary

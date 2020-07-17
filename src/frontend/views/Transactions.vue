@@ -13,7 +13,7 @@
         <div class="booking" v-for="booking in bookings" :key="booking.id">
           <q-timeline-entry
             class="booking__entry"
-            icon="palce"
+            icon="place"
             side="left"
           >
             <h5 slot="subtitle" class="q-timeline-subtitle">
