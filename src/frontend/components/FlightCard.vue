@@ -13,7 +13,7 @@
               <div class="col">Fuel</div>
             </div>
             <div class="row text-primary flight__direction">
-              <div class="col-3 flight__left-details">
+              <div class="col-8 flight__left-details">
                 <q-icon class="flight__icon" name="drive_eta" />
                 <div
                   class="q-headline flight__departure uppercase"
@@ -36,9 +36,9 @@
                 <div
                   class="q-headline flight__arrival uppercase"
                   data-test="flight-arrival-code"
-                >
+                >&pound; 47.89
                   <!-- {{ details.arrivalAirportCode }} -->
-                  &pound; 47.89
+                  
                 </div>
                 <div
                   class="q-caption capitalize text-secondary text-bold"
