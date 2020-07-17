@@ -5,7 +5,7 @@
       :id="details.flightNumber"
       data-test="flight-card"
     >
-      <div class="col-11">
+      <div class="col-10">
         <q-list highlight>
           <q-list-header>
             <div class="row uppercase text-bold">
@@ -13,7 +13,7 @@
               <div class="col">Fuel</div>
             </div>
             <div class="row text-primary flight__direction">
-              <div class="col-6 flight__left-details">
+              <div class="col-7 flight__left-details">
                 <q-icon class="flight__icon" name="drive_eta" />
                 <div
                   class="q-headline flight__departure uppercase"
@@ -182,7 +182,7 @@ export default {
   margin 1.3rem 1rem
 
 .flight__card
-  min-width 18rem
+  min-width 20rem
   max-width 32rem
   margin auto
   width 100%
@@ -192,7 +192,7 @@ export default {
   font-size $item-icon-size
 
 .flight__arrival
-  margin-left 2.3rem
+  margin-left 1.3rem
 
 .flight__separator
   background-color $secondary

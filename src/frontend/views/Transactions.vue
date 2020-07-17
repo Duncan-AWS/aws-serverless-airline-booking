@@ -13,13 +13,13 @@
         <div class="booking" v-for="booking in bookings" :key="booking.id">
           <q-timeline-entry
             class="booking__entry"
-            icon="local_gas_station"
+            icon="palce"
             side="left"
           >
             <h5 slot="subtitle" class="q-timeline-subtitle">
               <span data-test="booking-city-date">
-                01 Jan 2020 &mdash;
-                {{ booking.bookingDate }}
+                23 Mar 2020 &mdash; New Road, Oxford
+                <!-- {{ booking.bookingDate }} -->
               </span>
             </h5>
             <booking-flight
