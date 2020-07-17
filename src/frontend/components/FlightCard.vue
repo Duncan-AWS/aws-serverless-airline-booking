@@ -13,7 +13,7 @@
               <div class="col">Fuel</div>
             </div>
             <div class="row text-primary flight__direction">
-              <div class="col flight__left-details">
+              <div class="col-3 flight__left-details">
                 <q-icon class="flight__icon" name="drive_eta" />
                 <div
                   class="q-headline flight__departure uppercase"
