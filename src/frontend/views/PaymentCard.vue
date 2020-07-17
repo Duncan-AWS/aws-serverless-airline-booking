@@ -135,8 +135,8 @@ export default {
   },
   components: {
     FlightCard,
-    FlightToolbar,
-    FlightLoader
+    // FlightToolbar,
+    // FlightLoader
   },
   mixins: [validationMixin],
   validations: {
@@ -204,6 +204,20 @@ export default {
    * @param {string} form.name - Given contact name
    * @param {string} form.country - Given contact country
    * @param {object} form.countryOptions - List of countries we accept payment from
+   * countryOptions: [
+          {
+            label: "Brazil",
+            value: "BR"
+          },
+          {
+            label: "United Kingdom",
+            value: "UK"
+          },
+          {
+            label: "United States",
+            value: "US"
+          }
+        ],
    * @param {boolean} isCardInvalid - Boolean updated through Stripe Elements events upon input
    * @param {Flight} selectedFlight - Selected Flight
    */
@@ -218,20 +232,7 @@ export default {
         name: "",
         country: "",
         postcode: "",
-        countryOptions: [
-          {
-            label: "Brazil",
-            value: "BR"
-          },
-          {
-            label: "United Kingdom",
-            value: "UK"
-          },
-          {
-            label: "United States",
-            value: "US"
-          }
-        ],
+        country: "UK",
         isCardInvalid: true
       },
       selectedFlight: this.flight
