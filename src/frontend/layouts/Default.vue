@@ -41,7 +41,7 @@
           <q-item-side icon="drive_eta" />
           <q-item-main label="My Vehicles" sublabel="Registration Number" />
         </q-item>
-        <q-item :to="{ name: 'bookings' }" exact>
+        <q-item :to="{ name: 'paymentcard' }" exact>
           <q-item-side icon="payment" />
           <q-item-main label="Payment Card" sublabel="Credit Card" />
         </q-item>

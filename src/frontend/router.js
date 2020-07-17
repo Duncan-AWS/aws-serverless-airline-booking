@@ -7,6 +7,7 @@ import FlightResults from "./views/FlightResults.vue";
 import FlightSelection from "./views/FlightSelection.vue";
 import Bookings from "./views/Bookings.vue";
 import Vehicles from "./views/Vehicles.vue";
+import PaymentCard from "./views/PaymentCard.vue";
 import Transactions from "./views/Transactions.vue";
 import Help from "./views/Help.vue";
 import Authentication from "./views/Authentication.vue";
@@ -59,24 +60,18 @@ const router = new Router({
           component: Vehicles,
           meta: { requiresAuth: true }
         },
-        
-       
-      /*  {
-       *   path: "/profile/payment",
-       *   name: "payment",
-       *   component: Payment,
-       *   meta: { requiresAuth: true }
-       * },
-       */
-
+        {
+          path: "/profile/payment",
+          name: "paymentcard",
+          component: PaymentCard,
+          meta: { requiresAuth: true }
+        },
         {
           path: "/profile/transactions",
           name: "transactions",
           component: Transactions,
           meta: { requiresAuth: true }
         },
-        
-
         {
           path: "/profile/help",
           name: "help",
