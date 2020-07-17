@@ -5,7 +5,7 @@
       :id="details.flightNumber"
       data-test="flight-card"
     >
-      <div class="col-10">
+      <div class="col-5">
         <q-list highlight>
           <q-list-header>
             <div class="row uppercase text-bold">
