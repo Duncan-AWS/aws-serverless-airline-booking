@@ -45,7 +45,7 @@
           <q-item-side icon="payment" />
           <q-item-main label="Payment Card" sublabel="Credit Card" />
         </q-item>
-        <q-item :to="{ name: 'bookings' }" exact>
+        <q-item :to="{ name: 'transactions' }" exact>
           <q-item-side icon="local_gas_station" />
           <q-item-main label="Transactions" sublabel="Payment and Fuel History" />
         </q-item>
