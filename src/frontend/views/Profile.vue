@@ -8,63 +8,6 @@
         >
           {{ fullName }}
         </div>
-        <div class="loyalty__heading--tier">
-          <div
-            class="q-title loyalty__heading-tier-name"
-            data-test="loyalty-level"
-          >
-            {{ loyalty.level || "bronze" }}
-          </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="row loyalty__progress">
-          <div class="col-7 loyalty__progress--points">
-            <div class="q-display-1 loyalty__points" data-test="loyalty-points">
-              {{ loyalty.points || 0 }}
-            </div>
-            <div class="q-title text-primary text-bold">Points</div>
-          </div>
-          <div class="col-4">
-            <div
-              class="q-display-1 loyalty__progress--next-tier"
-              data-test="loyalty-next-tier"
-            >
-              {{ loyalty.percentage || 0 }}%
-            </div>
-            <div class="q-title text-primary text-bold">Next Tier Progress</div>
-            <q-progress :percentage="loyalty.percentage" color="secondary" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="profile__preferences--heading col-12 text-left q-mt-lg">
-            <q-toolbar color="grey-1 text-black">
-              <q-toolbar-title class="text-bold">Preferences</q-toolbar-title>
-            </q-toolbar>
-          </div>
-          <div class="profile__preferences-options col-12">
-            <q-list highlight no-border class="q-pa-none q-ml-md" link>
-              <a @click="choosePreference('diet')">
-                <q-item class="q-pa-none q-mt-md profile__preferences-option">
-                  <q-icon name="tune" size="2.6rem" />
-                  <q-item-main
-                    class="text-bold q-title q-ml-md"
-                    label="Dietary requirements"
-                  />
-                </q-item>
-              </a>
-              <a @click="choosePreference('luggage')">
-                <q-item class="q-pa-none q-mt-md profile__preferences-option">
-                  <q-icon name="tune" size="2.6rem" />
-                  <q-item-main
-                    class="text-bold q-title q-ml-md"
-                    label="Luggage"
-                  />
-                </q-item>
-              </a>
-            </q-list>
-          </div>
-        </div>
       </div>
       <amplify-sign-out class="Form--signout"></amplify-sign-out>
     </div>
@@ -101,54 +44,7 @@ export default {
       return `${this.firstName} ${this.lastName}`;
     }
   },
-  methods: {
-    choosePreference(option) {
-      const defaultDialogOpts = {
-        cancel: true,
-        preventClose: true,
-        color: "secondary"
-      };
-
-      const luggageDialog = {
-        title: "Luggage preference",
-        message: "How many luggages would you like to check-in with?",
-        options: {
-          type: "radio",
-          model: "opt2",
-          items: [
-            { label: "1", value: "1", color: "primary" },
-            { label: "2", value: "2" },
-            { label: "3", value: "3" }
-          ]
-        }
-      };
-
-      const dietaryDialog = {
-        title: "Dietary preference",
-        message: "What's your dietary requirement?",
-        options: {
-          type: "radio",
-          model: "opt2",
-          items: [
-            { label: "Vegatarian", value: "vegetarian", color: "secondary" },
-            { label: "Vegan", value: "vegan" },
-            { label: "Dairy-free", value: "dairy-free" },
-            { label: "Regular", value: "regular" }
-          ]
-        }
-      };
-
-      let dialog = {
-        ...defaultDialogOpts,
-        ...(option === "luggage" ? luggageDialog : dietaryDialog)
-      };
-
-      this.$q
-        .dialog(dialog)
-        .then(choice => this.$q.notify(`${option}: ${choice}`))
-        .catch(() => "No option selected");
-    }
-  },
+  
   async mounted() {
     /** Amplify clears out cookies and any storage that can map to users
      * However it is on us to clear out our own store and redirect to Auth
@@ -184,7 +80,7 @@ export default {
 
 <style lang="stylus">
 /**
- * Amplify authenticatior HOC as of now doesn't provide overriding mechanisms for UI
+ * Amplify authenticatior HOC as of now doesnot provide overriding mechanisms for UI
  * we use CSS Root variables along with an authentication-form injected class for consistent experience
  */
 @import '~variables'
