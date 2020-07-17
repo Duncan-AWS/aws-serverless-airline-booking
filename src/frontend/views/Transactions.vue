@@ -46,7 +46,7 @@
 
 <script>
 // @ts-nocheck
-import TransactionVisit from "../components/TransactionVisit";
+import BookingFlight from "../components/BookingFlight";
 import { mapState, mapGetters } from "vuex";
 
 /**
@@ -56,7 +56,7 @@ import { mapState, mapGetters } from "vuex";
 export default {
   name: "Transactions",
   components: {
-    TransactionVisit
+    BookingFlight
   },
   mounted() {
     /** authentication guards prevent authenticated users to view Bookings
