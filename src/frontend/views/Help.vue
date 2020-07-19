@@ -48,6 +48,32 @@
       >
       </q-field>
     </div>
+    
+    <div class="row text-primary flight__direction">
+      <div class="col-7 flight__left-details">
+        <q-icon class="flight__icon" name="not_listed_location" />
+        <div class="q-headline flight__departure uppercase">
+          Privacy Notice
+        </div>
+        <div class="q-caption capitalize text-secondary text-bold">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
 
   </q-page>
 </template>
