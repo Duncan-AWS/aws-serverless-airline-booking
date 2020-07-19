@@ -3,10 +3,55 @@
     <div class="wrapper">
       <div class="heading">
         <div class="q-display-1 search__headline" data-test="search-headline">
-          Where next?
+          Get Started ...
         </div>
       </div>
     </div>
+    
+    <div class="wrapper">
+      <q-btn
+        @click="search"
+        class="cta__button"
+        color="secondary"
+        label="Add Vehicle"
+        :disable="
+          !$v.departureCity.isAirport ||
+            $v.departureCity.$invalid ||
+            !$v.arrivalCity.isAirport ||
+            $v.arrivalCity.$invalid
+        "
+      >
+        <q-icon
+          class="cta__button--direction"
+          name="keyboard_arrow_right"
+          size="2.6rem"
+        />
+      </q-btn>
+    </div>
+    
+    <div class="wrapper">
+      <q-btn
+        @click="search"
+        class="cta__button"
+        color="secondary"
+        label="Add Payment Card"
+        :disable="
+          !$v.departureCity.isAirport ||
+            $v.departureCity.$invalid ||
+            !$v.arrivalCity.isAirport ||
+            $v.arrivalCity.$invalid
+        "
+      >
+        <q-icon
+          class="cta__button--direction"
+          name="keyboard_arrow_right"
+          size="2.6rem"
+        />
+      </q-btn>
+    </div>
+
+
+
     <div class="search__options q-pa-sm">
       <q-field
         class="home-icons search__options--input search__departure"
