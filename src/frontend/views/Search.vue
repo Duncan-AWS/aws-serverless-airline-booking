@@ -16,7 +16,7 @@
         :label-width="8"
         >
           <q-btn
-            @click="vehicles"
+            @click="addVehicle"
             class="col cta__button"
             color="secondary"
             label="Add Vehicle"
@@ -154,7 +154,12 @@ export default {
     /**
      * search method collects form data, create queryStrings, and redirects to Search Results view
      */
-    search() {
+      addVehicle() {
+      this.$router.push({
+        name: "vehicles",
+      });
+
+      search() {
       this.$router.push({
         name: "searchResults",
         query: {
