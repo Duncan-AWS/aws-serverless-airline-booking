@@ -8,31 +8,38 @@
       </div>
     </div>
     
-    <div class="wrapper">
-      <q-btn
-        @click="search"
-        class="cta__button"
-        color="secondary"
-        label="Add Vehicle"
-      >
-        <q-icon
-          class="cta__button--direction"
-          name="keyboard_arrow_right"
-          size="2.6rem"
-        />
-      </q-btn>
+    <div class="row wrapper">
+      <q-field
+        class="col home-icons search__options--input search__departure"
+        icon="drive_eta"
+        icon-color="primary"
+        :label-width="8"
+        >
+          <q-btn
+            @click="search"
+            class="col cta__button"
+            color="secondary"
+            label="Add Vehicle"
+          >
+            <q-icon
+              class="cta__button--direction"
+              name="keyboard_arrow_right"
+              size="2.6rem"
+            />
+          </q-btn>
+      </q-field>
     </div>
     
-    <div class="wrapper">
+    <div class="row wrapper">
       <q-field
-        class="home-icons search__options--input search__departure"
+        class="col home-icons search__options--input search__departure"
         icon="payment"
         icon-color="primary"
         :label-width="8"
         >
         <q-btn
           @click="search"
-          class="cta__button"
+          class="col cta__button"
           color="secondary"
           label="Add Payment"
           >
@@ -89,39 +96,9 @@
           />
         </q-input>
       </q-field>
-      <q-field
-        icon="calendar_today"
-        icon-color="primary"
-        class="search__date search__options--input"
-      >
-        <q-datetime
-          v-model="departureDate"
-          type="date"
-          format="ddd, DD MMM YYYY"
-          stack-label="Pick a date"
-        />
-      </q-field>
+      
     </div>
-    <div class="wrapper">
-      <q-btn
-        @click="search"
-        class="cta__button"
-        color="secondary"
-        label="Search flights"
-        :disable="
-          !$v.departureCity.isAirport ||
-            $v.departureCity.$invalid ||
-            !$v.arrivalCity.isAirport ||
-            $v.arrivalCity.$invalid
-        "
-      >
-        <q-icon
-          class="cta__button--direction"
-          name="keyboard_arrow_right"
-          size="2.6rem"
-        />
-      </q-btn>
-    </div>
+    
   </q-page>
 </template>
 
