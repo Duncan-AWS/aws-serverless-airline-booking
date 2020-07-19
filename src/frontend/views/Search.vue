@@ -158,8 +158,8 @@ export default {
         this.$router.push({
           name: "vehicles",
         });
-      }
-      
+      },
+
       search() {
         this.$router.push({
           name: "searchResults",
@@ -169,7 +169,7 @@ export default {
             arrival: this.arrivalCity
           }
         });
-      }
+      },
     /**
      * fuzzySearchFilter method uses Fuse library to easily find airports whether that is city, IATA, initials, etc.
      */
