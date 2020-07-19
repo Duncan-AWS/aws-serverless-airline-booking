@@ -16,7 +16,7 @@
         :label-width="8"
         >
           <q-btn
-            @click="search"
+            @click="vehicles"
             class="col cta__button"
             color="secondary"
             label="Add Vehicle"
@@ -38,7 +38,7 @@
         :label-width="8"
         >
         <q-btn
-          @click="search"
+          @click="paymentcard"
           class="col cta__button"
           color="secondary"
           label="Add Payment"
@@ -76,26 +76,7 @@
           />
         </q-input>
       </q-field>
-      <q-field
-        class="home-icons search__options--input search__arrival"
-        icon="flight_land"
-        icon-color="primary"
-        :label-width="8"
-      >
-        <q-input
-          class="search__arrival"
-          v-model="arrivalCity"
-          stack-label="Arrival airport"
-        >
-          <q-autocomplete
-            class="search__arrival--suggestion text-bold"
-            :min-characters="3"
-            :static-data="{ field: 'city', list: suggestionList }"
-            :filter="fuzzySearchFilter"
-            value-field="sublabel"
-          />
-        </q-input>
-      </q-field>
+      
       
     </div>
     
