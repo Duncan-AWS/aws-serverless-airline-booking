@@ -162,36 +162,36 @@ export default {
         this.$router.push({
           name: "paymentcard",
         });
-      },
+      }
 
-      search() {
-        this.$router.push({
-          name: "searchResults",
-          query: {
-            date: date.formatDate(this.departureDate, "YYYY-MM-DD"),
-            departure: this.departureCity,
-            arrival: this.arrivalCity
-          }
-        });
-      },
+      // search() {
+      //   this.$router.push({
+      //     name: "searchResults",
+      //     query: {
+      //       date: date.formatDate(this.departureDate, "YYYY-MM-DD"),
+      //       departure: this.departureCity,
+      //       arrival: this.arrivalCity
+      //     }
+      //   });
+      // },
     /**
      * fuzzySearchFilter method uses Fuse library to easily find airports whether that is city, IATA, initials, etc.
      */
-    fuzzySearchFilter(terms, { field, list }) {
-      const token = terms.toLowerCase();
-      var options = {
-        shouldSort: true,
-        threshold: 0.3,
-        location: 0,
-        distance: 100,
-        maxPatternLength: 10,
-        minMatchCharLength: 3,
-        keys: [field, "sublabel"]
-      };
-      let fuse = new Fuse(list, options);
-      let result = fuse.search(token);
-      return result;
-    }
+    // fuzzySearchFilter(terms, { field, list }) {
+    //   const token = terms.toLowerCase();
+    //   var options = {
+    //     shouldSort: true,
+    //     threshold: 0.3,
+    //     location: 0,
+    //     distance: 100,
+    //     maxPatternLength: 10,
+    //     minMatchCharLength: 3,
+    //     keys: [field, "sublabel"]
+    //   };
+    //   let fuse = new Fuse(list, options);
+    //   let result = fuse.search(token);
+    //   return result;
+    // }
   }
 };
 </script>
