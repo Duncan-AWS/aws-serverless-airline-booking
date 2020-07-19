@@ -30,7 +30,7 @@
         @click="addVehicle"
         class="cta__button"
         color="secondary"
-        label="Submit"
+        label="Add Vehicle"
 
       >
         <q-icon

@@ -5,7 +5,7 @@
       :departure="this.selectedFlight.departureAirportCode"
       :arrival="this.selectedFlight.arrivalAirportCode"
     />
-    <div class="flights">
+    <!-- <div class="flights">
       <div class="heading">
         <div
           class="q-headline text-primary text-center flight__headline"
@@ -18,7 +18,7 @@
         </div>
       </div>
       <flight-card v-if="this.selectedFlight" :details="this.selectedFlight" />
-    </div>
+    </div> -->
     <div class="form__payment">
       <div class="text-center">
         <div
@@ -107,7 +107,7 @@
           @click="payment"
           class="cta__button text-weight-medium"
           color="secondary"
-          label="Agree and pay now"
+          label="Register Payment Card"
           :disable="$v.form.$invalid || form.isCardInvalid"
           data-test="payment-button"
         >
