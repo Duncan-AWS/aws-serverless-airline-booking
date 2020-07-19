@@ -124,10 +124,10 @@
 
 <script>
 // @ts-nocheck
-import FlightCard from "../components/FlightCard";
+// import FlightCard from "../components/FlightCard";
 import FlightToolbar from "../components/FlightToolbar";
 import FlightClass from "../shared/models/FlightClass";
-import FlightLoader from "../components/FlightLoader";
+// import FlightLoader from "../components/FlightLoader";
 import { validationMixin } from "vuelidate";
 import { required, minLength } from "vuelidate/lib/validators";
 import { mapState, mapGetters } from "vuex";
@@ -148,9 +148,9 @@ export default {
     flightId: { type: String, required: true }
   },
   components: {
-    FlightCard,
-    FlightToolbar,
-    FlightLoader
+    // FlightCard,
+    // FlightLoader,
+    FlightToolbar
   },
   mixins: [validationMixin],
   validations: {
