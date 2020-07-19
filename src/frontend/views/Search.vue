@@ -8,9 +8,9 @@
       </div>
     </div>
 
-    <div class="row wrapper">
+    <!-- <div class="row wrapper">
       <img src="../media/octank_logo.png" >
-    </div>
+    </div> -->
 
     <div class="row wrapper">
       <q-field
