@@ -7,7 +7,11 @@
         </div>
       </div>
     </div>
-    
+
+    <div class="row wrapper">
+      <img src="../media/octank_logo.png" >
+    </div>
+
     <div class="row wrapper">
       <q-field
         class="col home-icons search__options--input search__departure"
