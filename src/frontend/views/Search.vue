@@ -54,7 +54,7 @@
 
 
 
-    <div class="search__options q-pa-sm">
+    <!-- <div class="search__options q-pa-sm">
       <q-field
         class="home-icons search__options--input search__departure"
         icon="flight_takeoff"
@@ -76,9 +76,7 @@
           />
         </q-input>
       </q-field>
-      
-      
-    </div>
+    </div> -->
     
   </q-page>
 </template>
