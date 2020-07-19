@@ -38,7 +38,7 @@
         :label-width="8"
         >
         <q-btn
-          @click="paymentcard"
+          @click="addPayment"
           class="col cta__button"
           color="secondary"
           label="Add Payment"
@@ -157,6 +157,12 @@ export default {
       addVehicle() {
         this.$router.push({
           name: "vehicles",
+        });
+      },
+
+      addPayment() {
+        this.$router.push({
+          name: "paymentcard",
         });
       },
 
