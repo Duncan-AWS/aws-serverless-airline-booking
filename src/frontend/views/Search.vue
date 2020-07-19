@@ -155,20 +155,21 @@ export default {
      * search method collects form data, create queryStrings, and redirects to Search Results view
      */
       addVehicle() {
-      this.$router.push({
-        name: "vehicles",
-      });
-
+        this.$router.push({
+          name: "vehicles",
+        });
+      }
+      
       search() {
-      this.$router.push({
-        name: "searchResults",
-        query: {
-          date: date.formatDate(this.departureDate, "YYYY-MM-DD"),
-          departure: this.departureCity,
-          arrival: this.arrivalCity
-        }
-      });
-    },
+        this.$router.push({
+          name: "searchResults",
+          query: {
+            date: date.formatDate(this.departureDate, "YYYY-MM-DD"),
+            departure: this.departureCity,
+            arrival: this.arrivalCity
+          }
+        });
+      }
     /**
      * fuzzySearchFilter method uses Fuse library to easily find airports whether that is city, IATA, initials, etc.
      */
