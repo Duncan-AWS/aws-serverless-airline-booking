@@ -14,12 +14,6 @@
         class="cta__button"
         color="secondary"
         label="Add Vehicle"
-        :disable="
-          !$v.departureCity.isAirport ||
-            $v.departureCity.$invalid ||
-            !$v.arrivalCity.isAirport ||
-            $v.arrivalCity.$invalid
-        "
       >
         <q-icon
           class="cta__button--direction"
@@ -30,24 +24,25 @@
     </div>
     
     <div class="wrapper">
-      <q-btn
-        @click="search"
-        class="cta__button"
-        color="secondary"
-        label="Add Payment Card"
-        :disable="
-          !$v.departureCity.isAirport ||
-            $v.departureCity.$invalid ||
-            !$v.arrivalCity.isAirport ||
-            $v.arrivalCity.$invalid
-        "
-      >
-        <q-icon
-          class="cta__button--direction"
-          name="keyboard_arrow_right"
-          size="2.6rem"
-        />
-      </q-btn>
+      <q-field
+        class="home-icons search__options--input search__departure"
+        icon="payment"
+        icon-color="primary"
+        :label-width="8"
+        >
+        <q-btn
+          @click="search"
+          class="cta__button"
+          color="secondary"
+          label="Add Payment"
+          >
+          <q-icon
+            class="cta__button--direction"
+            name="keyboard_arrow_right"
+            size="2.6rem"
+          />
+        </q-btn>
+      </q-field>
     </div>
 
 
