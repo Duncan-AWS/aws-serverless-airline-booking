@@ -72,8 +72,8 @@ export default {
       /**
        * @param {object} vrn - Vehicle Registration Number chosen by the customer
        */
-      new_vrn: "",
-      customer: $ctx.profile.sub
+      new_vrn: ""
+      // customer: $ctx.profile.sub
     };
   },
   mounted() {
