@@ -21,11 +21,12 @@
       >
         <q-input
           class="search__arrival"
-          v-model="vrn"
+          v-model="new_vrn"
           stack-label="Enter your vehicle registration number"
         >
          
         </q-input>
+        <p> New VRN is: {{ new_vrn }}</p>
       </q-field>
      
     </div>
@@ -69,7 +70,7 @@ export default {
       /**
        * @param {object} vrn - Vehicle Registration Number chosen by the customer
        */
-      vrn: ""
+      new_vrn: ""
     };
   },
   mounted() {
