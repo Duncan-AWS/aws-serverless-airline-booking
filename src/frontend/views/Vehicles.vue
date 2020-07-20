@@ -7,6 +7,10 @@
         </div>
       </div>
     </div>
+
+    <vehicle-card/>
+
+
     <div class="search__options q-pa-sm">
       
       <q-field
@@ -47,7 +51,7 @@
 // @ts-nocheck
 
 import { required, minLength } from "vuelidate/lib/validators";
-
+import VehicleCard from "../components/VehicleCard";
 
 
 export default {
@@ -56,6 +60,9 @@ export default {
    * Search view displays options for searching a flight given a departure, arrival and a date.
    */
   name: "Vehicles",
+  components: {
+    VehicleCard
+  },
   
   data() {
     return {
@@ -65,10 +72,35 @@ export default {
       vrn: ""
     };
   },
+  mounted() {
+    /** authentication guards prevent authenticated users to view Bookings
+     * however, the component doesn't stop from rendering asynchronously
+     * this guarantees we attempt talking to Booking service
+     * if our authentication guards && profile module have an user in place
+     */
+    if (this.isAuthenticated) {
+      this.loadVehicles();
+    }
+  },
   methods: {
     /**
      * search method collects form data, create queryStrings, and redirects to Search Results view
      */
+    async loadVehicles() {
+      try {
+        await this.$store.dispatch(
+          "vehicles/fetchVehicle",
+          this.paginationToken
+        );
+      } catch (error) {
+        console.error(error);
+        this.$q.notify(
+          `Error while fetching Vehicle - Check browser console messages`
+        );
+      }
+    }
+    
+    
     addVehicle() {
       this.$router.push({
         name: "searchResults",
@@ -79,7 +111,22 @@ export default {
         }
       });
     }
+
+
+
+  },
+  /**
+   * @param {Vehicle} vehicles - Bookings state from Bookings module
+   * @param {boolean} isAuthenticated - Getter from Profile module
+   */
+  computed: {
+    ...mapState({
+      vehicles: state => state.vehicles.vehicles,
+      paginationToken: state => state.vehicles.paginationToken
+    }),
+    ...mapGetters("profile", ["isAuthenticated"])
   }
+
 };
 </script>
 
