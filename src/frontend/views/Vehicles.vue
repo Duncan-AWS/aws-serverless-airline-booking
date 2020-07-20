@@ -26,7 +26,6 @@
         >
          
         </q-input>
-        <p> New VRN is: {{ new_vrn }}</p>
       </q-field>
      
     </div>
@@ -45,6 +44,9 @@
         />
       </q-btn>
     </div>
+      <p> New VRN is: {{ new_vrn }}</p>
+      <p> Customer is: {{ customer }}</p>
+      
   </q-page>
 </template>
 
@@ -70,7 +72,8 @@ export default {
       /**
        * @param {object} vrn - Vehicle Registration Number chosen by the customer
        */
-      new_vrn: ""
+      new_vrn: "",
+      customer: $ctx.profile.sub
     };
   },
   mounted() {
