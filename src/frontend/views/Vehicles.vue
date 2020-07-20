@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <!-- <vehicle-card/> -->
+    <vehicle-card/>
 
 
     <div class="search__options q-pa-sm">
