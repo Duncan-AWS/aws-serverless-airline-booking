@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <vehicle-card/>
+    <!-- <vehicle-card/> -->
 
 
     <div class="search__options q-pa-sm">
@@ -114,18 +114,18 @@ export default {
 
 
 
-  },
-  /**
-   * @param {Vehicle} vehicles - Bookings state from Bookings module
-   * @param {boolean} isAuthenticated - Getter from Profile module
-   */
-  computed: {
-    ...mapState({
-      vehicles: state => state.vehicles.vehicles,
-      paginationToken: state => state.vehicles.paginationToken
-    }),
-    ...mapGetters("profile", ["isAuthenticated"])
   }
+  // /**
+  //  * @param {Vehicle} vehicles - Bookings state from Bookings module
+  //  * @param {boolean} isAuthenticated - Getter from Profile module
+  //  */
+  // computed: {
+  //   ...mapState({
+  //     vehicles: state => state.vehicles.vehicles,
+  //     paginationToken: state => state.vehicles.paginationToken
+  //   }),
+  //   ...mapGetters("profile", ["isAuthenticated"])
+  // }
 
 };
 </script>
