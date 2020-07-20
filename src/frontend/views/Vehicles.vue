@@ -98,7 +98,7 @@ export default {
           `Error while fetching Vehicle - Check browser console messages`
         );
       }
-    }
+    },
     
     
     addVehicle() {
